@@ -2,10 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>LBS|Services</title>
+    <title>LBS | Certificates</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <!-- Swiper.js-->
     <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
     <!-- Leaflet-->
@@ -16,21 +17,15 @@
     <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="css/custom.css">
+    <!-- Lightbox CSS for certificates -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="css/gallery.css">
     <!-- Favicon-->
     <link rel="shortcut icon" href="img/favicon.png">
-
-<!--Other CSS Temp-->
-<!-- Template Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-    
-<!-- Vendor CSS Files -->
-<link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-<link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
   </head>
   <body>
     <!-- navbar-->
-    <header >
+    <header class="header">
       <nav class="navbar navbar-expand-lg navbar-light py-3 bg-white">
         <div class="container"><a class="navbar-brand" href="index.html"><img src="Nwimg/logo3-cropped.svg" alt="" width="120"></a>
           <button class="navbar-toggler navbar-toggler-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -40,13 +35,13 @@
                 <!-- Link--><a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item mx-2">
-                <!-- Link--><a class="nav-link active" href="services.html">Services</a>
+                <!-- Link--><a class="nav-link" href="services.html">Services</a>
               </li>
               <li class="nav-item mx-2">
                 <!-- Link--><a class="nav-link" href="gallery.html">Gallery</a>
               </li>
               <li class="nav-item mx-2">
-                <!-- Link--><a class="nav-link" href="certificates.html">Certificates</a>
+                <!-- Link--><a class="nav-link active" href="certificates.html">Certificates</a>
               </li>
               <li class="nav-item mx-2">
                 <!-- Link--><a class="nav-link" href="contact.html">Contact</a>
@@ -61,122 +56,37 @@
       </nav>
     </header>
     <!-- Hero Slider -->
-    <section style="padding:0px;">
+    <section class="bg-cover bg-position" style="background: url(img/hero-banner-3.jpg)">
       <div class="dark-overlay dark-overlay-lighter py-5">
         <div class="overlay-content">
           <div class="container text-center py-5">
-            <h1 class="text-white">Services</h1>
+            <h1 class="text-white">Certificates</h1>
             <nav class="d-flex justify-content-center" aria-label="breadcrumb">
               <ol class="breadcrumb bg-none mb-0">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Services</li>
+                <li class="breadcrumb-item active" aria-current="page">Certificates</li>
               </ol>
             </nav>
           </div>
         </div>
       </div>
     </section>
-    <section class="py-1 bg-light shadow-sm z-index-10">
-      <div class="container">
-          <div class="card-body text-center p-1 p-lg-5 ">
-            <div class=" py-1">
-                <p class="mb-5 text-muted">LONE BUILDERS AND SUPPLIERS provides one stop solution for all prefab buildings, 
-                  construction and supply worries. Depending on the size and field of the organization, we
-                  have different products and services to meet the requirements. We provide the optimum
-                  Solutions made for the organization.
-                  LBS began its business operation as Builders Contractors and suppliers
-                  LBS is focusing exclusively in high quality and cost-effective Product manufacturing and
-                  implementation of services. We are advancing on a tremendous pace and with involvement
-                  of skilled and experienced people working in the organization. LBS has established a very
-                  wide and vast client base within the state and is expecting to get to other states as well.
-                </p>
+    <!-- certificates Section -->
+    <section class="certificates">
+      <div class="photo-gallery">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">&nbsp;</h2>
             </div>
-          </div>
-        
-      </div>
-    </section>
-    <br>
-    <center><h2>Our<span class="text-primary"> Services </span></h2></center>
-    <br>
-    <!-- Services Section -->
-
-
-<!--Services-->
-
-    <section id="services" class="services section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-mountain-city"></i>
-              </div>
-              <h3 id='cons'>Civil Construction</h3>
-              <p>Bridges, Canals, Water-reservoirs.</p>
-              
+            <div class="row photos">
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/certificates/01.jpg" data-lightbox="photos"><img class="thumbnail" src="img/certificates/01.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/certificates/02.jpg" data-lightbox="photos"><img class="thumbnail" src="img/certificates/02.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/certificates/03.jpg" data-lightbox="photos"><img class="thumbnail" src="img/certificates/03.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/certificates/04.jpg" data-lightbox="photos"><img class="thumbnail" src="img/certificates/04.jpg"></a></div>
             </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
-              </div>
-              <h3 id='mfg'>Manufacturing</h3>
-              <p>Pre-fabricated Buildings and Shelters</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-compass-drafting"></i>
-              </div>
-              <h3 id='sup'>Supply</h3>
-              <p>Pre-fabricated Buildings and Shelters.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-trowel-bricks"></i>
-              </div>
-              <h3>Construction Material</h3>
-              <p>Direct supply of general construction material to client.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-helmet-safety"></i>
-              </div>
-              <h3>General Supply</h3>
-              <p>Electric & electrical goods, sanitary goods, storage tanks and other items.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
-              </div>
-              <h3 id='mst'>Steel Traders</h3>
-              <p>Mild Steel traders of all section and all major makes of India.</p>
-            </div>
-          </div><!-- End Service Item -->
-          <div class="text-center">
-            <a class="btn btn-outline-dark w-40 " href="contact.html">Get in Touch</a>
-          </div>
         </div>
-
       </div>
     </section>
-   
-   
     <footer class="text-white bg-cover bg-center" style="background: url(img/hero-banner-1.jpg)">
       <div class="dark-overlay">
         <div class="overlay-content">
@@ -195,7 +105,7 @@
 
               </div>
               <div class="col-lg-2 col-md-6">
-                <h6 class="text-uppercase text-primary mt-3 mb-4">Quick <span class="text-white">links</span></h6>
+                <h6 class="text-uppercase mt-3 mb-4">Quick <span class="text-white">links</span></h6>
                 <ul class="list-unstyled">
                   <li class="mb-2"><a class="footer-link" href="index.html">Home</a></li>
                   <li class="mb-2"><a class="footer-link" href="services.html">Services</a></li>
@@ -208,7 +118,7 @@
               </div>
               <div class="col-lg-2 col-md-6">
                 <a href="services.html">
-                <h6 class="text-uppercase text-primary mt-3 mb-4">Our <span class="text-white">services</span></h6>
+                <h6 class="text-uppercase mt-3 mb-4">Our <span class="text-white">services</span></h6>
               </a>
                 <ul class="list-unstyled">
                   <li class="mb-2"><a class="footer-link" href="services.html#cons">Construction</a></li>
@@ -218,7 +128,7 @@
                 </ul>
               </div>
               <div class="col-lg-4 col-md-6">
-                <h6 class="text-uppercase text-primary mt-3 mb-4">Opening <span class="text-white">hours</span></h6>
+                <h6 class="text-uppercase mt-3 mb-4">Opening <span class="text-white">hours</span></h6>
                 <ul class="list-unstyled mb-0">
                   <li class="d-flex align-items-center justify-content-between pb-2">
                     <p class="text-sm mb-0">Monday </p><span class="text-sm mb-0">9:00 am - 06:00 pm</span>
@@ -250,23 +160,14 @@
       </div>
     </footer>
     <!-- JavaScript files-->
+    <script src="js/jquery.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/light.js"></script>    
     <script src="vendor/swiper/swiper-bundle.min.js"></script>
     <script src="vendor/leaflet/leaflet.js"></script>
     <script src="js/front.js"></script>
-    
+    <script src="js/leaflet.js"></script>    
     <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<!-- Vendor JS Files -->
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-
-<!-- Template Main JS File -->
-<script src="assets/js/main.js"></script>  
   </body>
 </html>

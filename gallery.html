@@ -2,10 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>LBS | About</title>
+    <title>LBS | Gallery</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <!-- Swiper.js-->
     <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
     <!-- Leaflet-->
@@ -16,6 +17,9 @@
     <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="css/custom.css">
+    <!-- Lightbox CSS for gallery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="css/gallery.css">
     <!-- Favicon-->
     <link rel="shortcut icon" href="img/favicon.png">
   </head>
@@ -34,7 +38,7 @@
                 <!-- Link--><a class="nav-link" href="services.html">Services</a>
               </li>
               <li class="nav-item mx-2">
-                <!-- Link--><a class="nav-link" href="gallery.html">Gallery</a>
+                <!-- Link--><a class="nav-link active" href="gallery.html">Gallery</a>
               </li>
               <li class="nav-item mx-2">
                 <!-- Link--><a class="nav-link" href="certificates.html">Certificates</a>
@@ -43,7 +47,7 @@
                 <!-- Link--><a class="nav-link" href="contact.html">Contact</a>
               </li>
               <li class="nav-item mx-2">
-                <!-- Link--><a class="nav-link active" href="about.html">About</a>
+                <!-- Link--><a class="nav-link" href="about.html">About</a>
               </li>
               
             </ul>
@@ -56,75 +60,62 @@
       <div class="dark-overlay dark-overlay-lighter py-5">
         <div class="overlay-content">
           <div class="container text-center py-5">
-            <h1 class="text-white">About Us</h1>
+            <h1 class="text-white">Gallery</h1>
             <nav class="d-flex justify-content-center" aria-label="breadcrumb">
               <ol class="breadcrumb bg-none mb-0">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">About</li>
+                <li class="breadcrumb-item active" aria-current="page">Gallery</li>
               </ol>
             </nav>
           </div>
         </div>
       </div>
     </section>
-    <!-- Contact Section -->
-    <section class="py-5 bg-dark shadow-sm z-index-20 ">
-      <div class="container py-5 bg-dark border border-white border-1">
-        <div class="card bg-dark ">
-          <div class="card-body text-center p-4 p-lg-5 ">
-            <div class=" py-5">
-                <h2><span class="text-light"> About The Company </span></h2>
-                <p class="mb-5 text-light">The company was founded and established in 2002 by very energetic and higly qualified Mr
-                  Ab Majid Lone (MBA) having vivid experience and wide exposure. People involved here are
-                  young qualified business graduates and qualified engineers from the renowned universities.
-                  The premises are spread over 8000 sft area and is equipped with sufficient quantum of latest
-                  machinery installed and technical experts.
-                  The resource personnel working in the company have been consistently providing reliable
-                  support services and consultancy to a wide variety of corporate houses either in the capacity
-                  of executive or as business partner or consultant. Bottom line of the company philosophy is
-                  building a long-term business partnership with its clients where interpersonal relationship,
-                  reliability, assured quality and target oriented modern technology are the major building
-                  blocks.
-                  It is a company where professionals from both technical and functional field group together
-                  with an objective of providing appropriate solutions. It realizes the importance of functional
-                  knowledge and its impact in developing solutions. We constantly strive to be a leading firm
-                  with profound business and functional knowledge. The key to the company's success is the
-                  maintenance of a close working relationship with the clients through ensuring the best
-                  possible solutions to their needs; to establish and maintain a thorough knowledge and
-                  understanding of client's objective and help them maximize the benefits.
-                  We want to establish ourselves as the best choice in Prefab Manufacturing, Construction and
-                  supply industry.</p>
-                  <br>
-                  <h2><span class="text-light">About our Director </span></h2>
-                <p class="mb-5 text-light">Mr Abdul Majid Lone, Director and Sole proprietor of Lone Builders & Suppliers, is a
-                  native of Baramulla district, J&K. His staunch ambition to assert himself as a leading
-                  entrepreneur of the valley made him choose the field of commerce. Completing his
-                  Bachelors in Commerce from University of Kashmir, he pursued his masters in Personal
-                  Management from Pune University and ventured into the start-up ecosystem. Hailing
-                  from a middle-class family with no resources to foster the idea, Mr. Lone took this
-                  perilous task heads on with dignity, diligence and sheer determination.
-                  Starting with a micro start up to building a commercial enterprise, he has proven to the
-                  world that those who can dream it, they can do it. He is a pathfinder and inspiration to
-                  the youth of valley who find very little opportunity to venture beyond the traditional
-                  business forms and want to leap into more advanced and challenging works.
-                  Presently, he is the Chairman of Manufacturers & Dealers Association working on
-                  projects under the state defence agencies. Mr lone is lauded as an honourable, prudent
-                  businessman. His immense support & conviction helped in establishment of the PreFab
-                  manufacturing unit of his spouse and Apex Motors (a TATA dealership) of his sibling.
-                  He takes it on himself to provide platforms to the people with a passion for their work
-                  and out of the box vision.</p><br>
-                  <h2><span class="text-light">Our Mission & Vision</span></h2>
-                <p class="mb-5 text-light">Our Mission is to achieve the reputation of a quality, high standard & reliable manufacturer
-                  builder and supplier.
-                  Our Vision is to achieve 100% customer satisfaction by delivering quality products and
-                  services at an affordable cost. Our forward vision is to strive to become an entity in
-                  manufacturing construction and suppliers business, capable of demanding unconditional
-                  response from the targeted niche. We also believe that for our scope of improvisation – sky
-                  is the limit and we are always ready to take our achievements to the next level. We are
-                  growing and would always like to remain on the growing streak.
-                </list></p>
+    <!-- Gallery Section -->
+    <section class="gallery">
+      <div class="photo-gallery">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">&nbsp;</h2>
             </div>
-          </div>
+            <div class="row photos">
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/01.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/01.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/02.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/02.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/03.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/03.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/04.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/04.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/05.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/05.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/06.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/06.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/07.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/07.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/08.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/08.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/09.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/09.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/10.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/10.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/11.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/11.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/12.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/12.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/13.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/13.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/14.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/14.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/15.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/15.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/16.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/16.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/17.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/17.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/18.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/18.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/19.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/19.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/20.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/20.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/21.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/21.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/22.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/22.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/23.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/23.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/24.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/24.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/25.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/25.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/26.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/26.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/27.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/27.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/28.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/28.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/29.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/29.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/30.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/30.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/31.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/31.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/32.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/32.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/33.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/33.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/34.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/34.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/35.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/35.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/gallery/36.jpg" data-lightbox="photos"><img class="thumbnail" src="img/gallery/36.jpg"></a></div>
+            </div>
         </div>
       </div>
     </section>
@@ -141,7 +132,7 @@
                   <p class="mb-1"><i class="fas me-3 text-primary fa-fw fa-mobile text-light"></i><span class="text-sm">+91-9906574700</span></p>
                 </a>
                   <a class="text-white" href="https://goo.gl/maps/9APoh1hBzQ25Z68E6" >
-                  <p class="mb-1"><i class="fas me-3 text-primary fa-fw fa-map-marker-alt"></i><span class="text-sm">Opposite FCI Godown Khawaja Bagh, Baramulla-193101, J&K</span></p>
+                  <p class="mb-1"><i class="fas me-3 text-primary fa-fw fa-map-marker-alt"></i><span class="text-sm">Opposite FCI Godown Khawaja Bagh, Baramulla-193103, J&K</span></p>
                 </a>
 
               </div>
@@ -200,12 +191,13 @@
       </div>
     </footer>
     <!-- JavaScript files-->
+    <script src="js/jquery.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/light.js"></script>    
     <script src="vendor/swiper/swiper-bundle.min.js"></script>
     <script src="vendor/leaflet/leaflet.js"></script>
     <script src="js/front.js"></script>
-    <script src="js/leaflet.js"></script>
-    
+    <script src="js/leaflet.js"></script>    
     <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </body>
